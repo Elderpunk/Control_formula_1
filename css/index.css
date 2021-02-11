@@ -3,6 +3,9 @@
     width: 100%;
     display: grid;
     grid-template-columns:30% 0.5fr 2fr 2fr 0.5fr 30% ;
+    grid-template-rows:30% 70%;
+    position: absolute;
+
 }
 
 /* Carretera */
@@ -32,4 +35,11 @@
     grid-column: 5/6;
     border-left: 3px white solid;
     background-color:#C4C4C4; 
+}
+/* Coche */
+.imagen{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
