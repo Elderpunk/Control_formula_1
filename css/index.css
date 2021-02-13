@@ -1,44 +1,87 @@
 
 .container{
-    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns:30% 0.5fr 2fr 2fr 0.5fr 30% ;
-    grid-template-rows:30% 70%;
-    position: absolute;
-
+    grid-template-rows:150px 100px 1000px 40px 1000px 40px 1000px 100px;
 }
 
 /* Carretera */
 .arcenleft{
-    width: 100%;
-    height:100vh;
+    height:100%;
     grid-column: 2/3;
+    grid-row: 1/8;
     background-color:#C4C4C4;
 }
 .carrilleft{
-    width: 100%;
-    height:100vh;
+    height:100%;
     grid-column: 3/4;
+    grid-row: 1/8;
     background-color:#C4C4C4; 
     border-right: 10px white dashed;
     border-left: 3px white solid;}
 .carrilright{
-    width: 100%;
-    height:100vh;
+    height:100%;
     grid-column: 4/5;
+    grid-row: 1/8;
     background-color:#C4C4C4; 
     border-left: 10px white dashed;
 }
 .arcenright{
-    width: 100%;
-    height:100vh;
+    height:100%;
     grid-column: 5/6;
+    grid-row: 1/8;
     border-left: 3px white solid;
     background-color:#C4C4C4; 
 }
-/* Coche */
-.imagen{
-    display:flex;
-    justify-content: center;
-    position: relative;
+
+/* Zonas de control*/
+.salida{
+    grid-column: 2/6;
+    grid-row: 2/3;
+    background-color:#0f0f0f;
+    color: #ffff;
+    z-index: +1;
+    font-size: 80px;
+    text-align:center;
+    border: dashed 3px white;
 }
+.control1{
+    grid-column: 2/6;
+    grid-row: 4/5;
+    background-color:#0f0f0f;
+    color: #ffff;
+    z-index: +1;
+    font-size: 20px;
+    text-align:center;
+}
+.control2{
+    grid-column: 2/6;
+    grid-row: 6/7;
+    background-color:#0f0f0f;
+    color: #ffff;
+    z-index: +1;
+    font-size: 20px;
+    text-align:center;
+}
+.meta{
+    grid-column: 2/6;
+    grid-row: 8/9;
+    background-color:#0f0f0f;
+    color: #ffff;
+    z-index: +1;
+    font-size: 100px;
+    text-align:center;
+    border: dashed 3px white;
+
+}
+/* Coche */
+.coche{
+    grid-row:1/9;
+    grid-column: 3/5;
+    z-index: +2;
+    justify-self:center;
+    position: sticky;
+    top: 0;
+}
+
