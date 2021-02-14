@@ -3,38 +3,37 @@
     height: 100vh;
     display: grid;
     grid-template-columns:30% 0.5fr 2fr 2fr 0.5fr 30% ;
-    grid-template-rows:150px 100px 1000px 40px 1000px 40px 1000px 150px 2000px;
+    grid-template-rows:150px 100px 1000px 1000px 1000px 1000px;
 }
 
 /* Carretera */
 .arcenleft{
     height:100%;
     grid-column: 2/3;
-    grid-row: 1/10;
+    grid-row: 1/7;
     background-color:#C4C4C4;
 }
 .carrilleft{
     height:100%;
     grid-column: 3/4;
-    grid-row: 1/10;
+    grid-row: 1/7;
     background-color:#C4C4C4; 
     border-right: 10px white dashed;
     border-left: 3px white solid;}
 .carrilright{
     height:100%;
     grid-column: 4/5;
-    grid-row: 1/10;
+    grid-row: 1/7;
     background-color:#C4C4C4; 
     border-left: 10px white dashed;
 }
 .arcenright{
     height:100%;
     grid-column: 5/6;
-    grid-row: 1/10;
+    grid-row: 1/7;
     border-left: 3px white solid;
     background-color:#C4C4C4; 
 }
-
 
 /* Zonas de control*/
 .salida{
@@ -46,35 +45,6 @@
     font-size: 80px;
     text-align:center;
     border: dashed 3px white;
-}
-.control1{
-    grid-column: 2/6;
-    grid-row: 4/5;
-    background-color:#0f0f0f;
-    color: #ffff;
-    z-index: +1;
-    font-size: 20px;
-    text-align:center;
-}
-.control2{
-    grid-column: 2/6;
-    grid-row: 6/7;
-    background-color:#0f0f0f;
-    color: #ffff;
-    z-index: +1;
-    font-size: 20px;
-    text-align:center;
-}
-.meta{
-    grid-column: 2/6;
-    grid-row: 8/9;
-    background-color:#0f0f0f;
-    color: #ffff;
-    z-index: +1;
-    font-size: 100px;
-    text-align:center;
-    border: dashed 3px white;
-
 }
 /* Coche */
 .coche{
