@@ -53,7 +53,7 @@ addEventListener('scroll', () => {
         control1.style.border = '2px solid red'
         control1.style.padding ='10px'
         control1.style.position = 'absolute'
-        control1.style.top = '700px'
+        control1.style.top = '500px'
         control1.style.left = '100px'
         document.body.appendChild(control1)
     }
@@ -69,7 +69,7 @@ addEventListener('scroll', () => {
         control2.style.border = '2px solid red'
         control2.style.padding ='10px'
         control2.style.position = 'absolute'
-        control2.style.top = '1200px'
+        control2.style.top = '1000px'
         control2.style.right = '100px'
         document.body.appendChild(control2)
     }
@@ -85,7 +85,7 @@ addEventListener('scroll', () => {
         meta.style.color = 'white'
         meta.style.border = '3px dashed white'
         meta.style.position = 'absolute'
-        meta.style.top = '1600px'
+        meta.style.top = '1200px'
         meta.style.right = '410px'
         document.body.appendChild(meta)
     }
