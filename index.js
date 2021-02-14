@@ -76,7 +76,7 @@ addEventListener('scroll', () => {
 })
 // META
 addEventListener('scroll', () => {
-    if (scrollY >= 1200 && scrollY <= 1250) {
+    if (scrollY >= 1500 && scrollY <= 1550) {
         const meta = document.createElement('h1')
         meta.textContent = 'META'
         meta.style.fontSize = '5rem'
@@ -85,7 +85,7 @@ addEventListener('scroll', () => {
         meta.style.color = 'white'
         meta.style.border = '3px dashed white'
         meta.style.position = 'absolute'
-        meta.style.top = '1200px'
+        meta.style.top = '1500px'
         meta.style.right = '410px'
         document.body.appendChild(meta)
     }
