@@ -1,31 +1,33 @@
-//MOVER COCHE SOBRE CARRETERA
+// MOVER EL COCHE CON LOS CURSORES
 
-// 1-Saber que nombre tiene mis cursores
-document.addEventListener('keydown',evento=>{
+
+// Averiguar el nombre que se le da a los cursores
+document.addEventListener('keydown', evento => {
     console.log(evento.key)
 })
 
-// Variables 
-let x=0,y=0
-//Funciones
+// VARIABLES / FUNCIONES
+let x=0, y=0
 const coche = document.getElementById('coche'),
-up =() => coche.style.transfrom = 'translate(${x},${y -=10}%)'
-down =() => coche.style.transfrom = 'translate(${x},${y +=10}%)'
-right =() => coche.style.transfrom = 'translate(${x +=10}%,${y})'
-left =() => coche.style.transfrom = 'translate(${x -=10}%,${y})'
+        up = () => coche.style.transform = `translate(${x}%, ${y -= 30}%)`
+        down = () => coche.style.transform = `translate(${x}%, ${y += 30}%)`
+        right = () => coche.style.transform = `translate(${x += 30}%, ${y}%)`
+        left = () => coche.style.transform = `translate(${x -= 30}%, ${y}%)`
 
-document.addEventListener('keyup',evento => {
-    switch(evento.key) {
+
+// mover pelotita
+document.addEventListener('keyup', evento => {
+    switch (evento.key) {
         case 'ArrowUp':
             up()
             break
-            case 'ArrowDown':
+        case 'ArrowDown':
             down()
             break
-            case 'ArrowRight':
-            rigt()
+        case 'ArrowRight':
+            right()
             break
-            case 'ArrowLeft':
+        case 'ArrowLeft':
             left()
             break
     }
